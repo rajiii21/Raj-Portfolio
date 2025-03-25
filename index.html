@@ -19,7 +19,7 @@
 	<!-- start of header section -->
 	<header class="header">
 		<div class="img">
-			<img src="img/raj.jpeg" alt="no picture" class="imgg"></img>
+			<img src="img/raje.jpg" alt="no picture" class="imgg"></img>
 			<h2>Rajeshwari</h2>
 		</div>
 		<div class="icons">
@@ -32,7 +32,7 @@
 		</div>
 		<nav class="nav">
 			<ul>
-				<li><a href="#home" onclick="setActive(this)">
+				<li><a href="#home" onclick="setActive(this)" class="active">
 						<i class="bi bi-house-door-fill"></i><span>Home</span>
 					</a></li>
 				<li><a href="#about" onclick="setActive(this)">
@@ -76,12 +76,12 @@
 					<i class="bi bi-x" id="closemenu"></i>
 				</div>
 				<div class="homehead">
-				<div class='home-col'>
-					<h1>I<span style="color: #149ddd">'</span>m Rajeshwari</h1>
-					<h2>I'm <span class="auto-type"></span></h2>
-					<button class="cv-btn"><a href="" download="">Download CV</a></button>
+					<div class='home-col'>
+						<h1>I<span style="color: #149ddd">'</span>m Rajeshwari</h1>
+						<h2>I'm <span class="auto-type"></span></h2>
+						<button class="cv-btn"><a href="" download="">Download CV</a></button>
+					</div>
 				</div>
-			</div>
 			</div>
 		</div>
 	</section>
@@ -98,7 +98,7 @@
 			</div>
 			<div class='about-row'>
 				<div class='about-col-1' data-aos="flip-down">
-					<img src="img/raj.jpeg" alt="no picture"></img>
+					<img src="img/raje.jpg" alt="no picture"></img>
 				</div>
 				<div class='about-col-2' data-aos="flip-down">
 					<div class='para1'>
@@ -324,8 +324,7 @@
 				<div class="gal-colum" data-aos="flip-left">
 					<div class="gal-card">
 						<div class="gal-item">
-							<img
-								src="img/project2.jpeg"></img>
+							<img src="img/project2.jpeg"></img>
 
 							<div class="portfolio-info">
 								<div class="portfolio-icon">
@@ -342,8 +341,7 @@
 				<div class="gal-colum" data-aos="flip-left">
 					<div class="gal-card">
 						<div class="gal-item">
-							<img
-								src="img/project3.jpeg"></img>
+							<img src="img/project3.jpeg"></img>
 
 							<div class="portfolio-info">
 								<div class="portfolio-icon">
@@ -360,8 +358,7 @@
 				<div class="gal-colum" data-aos="flip-left">
 					<div class="gal-card">
 						<div class="gal-item">
-							<img
-								src="img/project4.jpeg"></img>
+							<img src="img/project4.jpeg"></img>
 
 							<div class="portfolio-info">
 								<div class="portfolio-icon">
@@ -386,7 +383,7 @@
 
 	<!-- start of contact section -->
 
-	
+
 	<section class="con-sec" id="contact">
 		<div class="cont-container">
 			<div class="con-title">
@@ -402,7 +399,7 @@
 								<i class="bi bi-geo-alt"></i>
 							</div>
 							<p><b>Location:</b>9/308 Poobalasamuthiram street,
-								Kurumbalaperi, Tenkasi - 627851. Tamil Nadu 
+								Kurumbalaperi, Tenkasi - 627851. Tamil Nadu
 							</p>
 							<p></p>
 						</div>
@@ -410,38 +407,38 @@
 							<div class="conticons">
 								<i class="bi bi-telephone"></i>
 							</div>
-							<p><b>Phone:</b><a href= 'tel:+919360770327' class="change-mood">+91 9360770327</a>
+							<p><b>Phone:</b><a href='tel:+919360770327' class="change-mood">+91 9360770327</a>
 							</p>
 						</div>
 						<div class="cont-icons">
 							<div class="conticons">
-							<i class="bi bi-envelope"></i>
+								<i class="bi bi-envelope"></i>
 							</div>
-							<p><b>Mail:</b><a href="mailto:prajeshwari313@gmail.com" class="change-mood">prajeshwari313@gmail.com</a>
+							<p><b>Mail:</b><a href="mailto:prajeshwari313@gmail.com"
+									class="change-mood">prajeshwari313@gmail.com</a>
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="cont-col2">
 					<div class="cont-content">
-					<h2>Send you a message</h2>
-					<form  action="https://formspree.io/f/xayrzplv"
-					method="POST">
-						<input type="text" placeholder="Name" name="name" class="inputName" required>
-						<br>
-						<input type="email" placeholder="Email" name="Email" required>
-						<br>
-						<input type="text" placeholder="Subject" name="Subject" required><br>
-						<textarea placeholder="Message" name="Messagae" required></textarea>
+						<h2>Send you a message</h2>
+						<form action="https://formspree.io/f/xayrzplv" method="POST">
+							<input type="text" placeholder="Name" name="name" class="inputName" required>
+							<br>
+							<input type="email" placeholder="Email" name="Email" required>
+							<br>
+							<input type="text" placeholder="Subject" name="Subject" required><br>
+							<textarea placeholder="Message" name="Messagae" required></textarea>
 
-						<button type="submit" class="submit-btn">Submit</button>
-					</form>
+							<button type="submit" class="submit-btn">Submit</button>
+						</form>
 					</div>
 				</div>
 			</div>
 
 		</div>
-	</section>   
+	</section>
 
 	<!-- end of contact section -->
 
@@ -478,12 +475,12 @@
 		darkmood.addEventListener("click", function (e) {
 			e.preventDefault()
 			document.querySelector("body").classList.toggle("darktheme")
-			if(document.querySelector("body").classList.contains("darktheme")){
-				darkmood.src="img/lightmood.jpg"
+			if (document.querySelector("body").classList.contains("darktheme")) {
+				darkmood.src = "img/lightmood.jpg"
 
 			}
-			else{
-                darkmood.src="img/dark.png"
+			else {
+				darkmood.src = "img/dark.png"
 
 			}
 			console.log("dark");
@@ -500,17 +497,53 @@
 
 		function setActive(activelink) {
 			let actives = document.querySelectorAll("header nav ul li a");
+			let activeId = document.getElementById("id");
+
 			console.log(actives);
 
 			actives.forEach((e) => {
 				e.classList.remove("active")
+
 			})
+
 			activelink.classList.add("active")
 		}
 
 
+		// scroll active nav function
+
+		document.addEventListener("DOMContentLoaded", function () {
+			const sections = document.querySelectorAll("section");
+			const navLinks = document.querySelectorAll(".nav ul li a");
+
+			function setActiveNav() {
+				let currentSection = "";
+
+				sections.forEach((section) => {
+					const sectionTop = section.offsetTop;
+					const sectionHeight = section.clientHeight;
+					if (pageYOffset >= sectionTop - 100) {
+						currentSection = section.getAttribute("id");
+					}
+				});
+
+				navLinks.forEach((link) => {
+					link.classList.remove("active");
+					if (link.getAttribute("href").substring(1) === currentSection) {
+						link.classList.add("active");
+					}
+				});
+			}
+
+			window.addEventListener("scroll", setActiveNav);
+		});
+
+
+
+
+
 		var typed = new Typed('.auto-type', {
-			strings: ['Frontend Developer'],
+			strings: ['Frontend Developer', 'React Js Developer'],
 			typeSpeed: 175,
 			backSpeed: 150,
 			loop: true

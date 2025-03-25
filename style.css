@@ -1180,7 +1180,7 @@
 	border: 6px solid #2c2f3f;
 	border-radius: 50%;
 	margin: 13px auto;
-	object-fit: cover;
+	object-fit: fill;
 	display: block;
 }
 .home-col h2 {
